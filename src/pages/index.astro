@@ -1,0 +1,362 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Hero from '../components/Hero.astro';
+import FeatureCard from '../components/FeatureCard.astro';
+---
+
+<Layout title="Visory - Smart Home Security in Your Pocket">
+	<Hero />
+	
+	<section class="features" id="features">
+		<div class="container">
+			<div class="section-header">
+				<h2>Why Choose Visory?</h2>
+				<p>A wide range of applications for your home security and pet monitoring needs</p>
+			</div>
+			
+			<div class="features-grid">
+				<FeatureCard 
+					title="Pet Monitoring" 
+					description="Keep an eye on your pets when you're away. Get alerts when they bark or make noise."
+					icon="fas fa-paw"
+					image="/images/pet-monitoring.jpg"
+				/>
+				<FeatureCard 
+					title="Child Safety" 
+					description="Perfect for using as a WiFi kids monitor. Get alerts when your child cries."
+					icon="fas fa-baby"
+					image="/images/child-safety.jpg"
+				/>
+				<FeatureCard 
+					title="Home Security" 
+					description="Know what is going on in your home when you're not there. Get alerts for any suspicious activity."
+					icon="fas fa-home"
+					image="/images/home-security.jpg"
+				/>
+				<FeatureCard 
+					title="Smart Alerts" 
+					description="The intruder will not slip unnoticed with our advanced motion and sound detection."
+					icon="fas fa-bell"
+				/>
+			</div>
+		</div>
+	</section>
+	
+	<section class="how-it-works">
+		<div class="container">
+			<div class="section-header">
+				<h2>How It Works</h2>
+				<p>Simple setup, powerful features</p>
+			</div>
+			
+			<div class="steps">
+				<div class="step">
+					<div class="step-number">1</div>
+					<h3>Link Your Devices</h3>
+					<p>Connect at least two devices (smartphones or tablets) – one for capturing video and one for watching it.</p>
+				</div>
+				<div class="step">
+					<div class="step-number">2</div>
+					<h3>Quick Setup via QR Code</h3>
+					<p>To link two devices together you need to do as little as scan a QR code.</p>
+				</div>
+				<div class="step">
+					<div class="step-number">3</div>
+					<h3>Start Monitoring</h3>
+					<p>Begin monitoring your home, pets, or children from anywhere, anytime.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<section class="features-detail">
+		<div class="container">
+			<div class="feature-row">
+				<div class="feature-content">
+					<h2>Compatible with Apple and Android</h2>
+					<p>Visory works seamlessly across platforms. You can easily link together an iPhone and any Android smartphone.</p>
+					<ul class="feature-list">
+						<li>Cross-platform compatibility</li>
+						<li>Easy device pairing</li>
+						<li>Synchronized experience</li>
+					</ul>
+				</div>
+				<div class="feature-image">
+					<img src="/images/devices.jpg" alt="Cross-platform compatibility" class="rounded-image" />
+				</div>
+			</div>
+			
+			<div class="feature-row reverse">
+				<div class="feature-content">
+					<h2>Multiple Live Streams</h2>
+					<p>Support two and more live streams simultaneously. Add as many devices as you need for free.</p>
+					<ul class="feature-list">
+						<li>Multiple camera support</li>
+						<li>Unlimited devices</li>
+						<li>Free of charge</li>
+					</ul>
+				</div>
+				<div class="feature-image">
+					<img src="/images/app-screenshot.png" alt="Multiple streams" class="rounded-image" />
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<section class="coming-soon">
+		<div class="container">
+			<div class="section-header">
+				<h2>Coming Soon</h2>
+				<p>Rich features for incredible home protection and pet care</p>
+			</div>
+			
+			<div class="features-grid">
+				<FeatureCard 
+					title="Night Video Camera" 
+					description="Arrange overnight surveillance sessions. Keep your eye on what is going on in the darkroom."
+					icon="fas fa-moon"
+					image="/images/night-vision.jpg"
+				/>
+				<FeatureCard 
+					title="Sound & Motion Detection" 
+					description="Nothing will be left unnoticed. Get an instant alert as the system detects any sound or motion."
+					icon="fas fa-volume-up"
+				/>
+				<FeatureCard 
+					title="Kids Cry & Bark Detection" 
+					description="The app detects kids cry and barking and sends you an instant alert. Perfect for pet monitoring or nanny cam."
+					icon="fas fa-dog"
+				/>
+				<FeatureCard 
+					title="Human Detection" 
+					description="The app distinguishes humans from other objects. Get alerts only when a person is detected."
+					icon="fas fa-user"
+				/>
+				<FeatureCard 
+					title="Cloud Storage" 
+					description="All recordings are auto-saved to the cloud for easy access and review."
+					icon="fas fa-cloud"
+				/>
+			</div>
+		</div>
+	</section>
+	
+	<section class="cta">
+		<div class="container">
+			<h2>Ready to Secure Your Home?</h2>
+			<p>Start using Visory today and enjoy peace of mind knowing your home and loved ones are protected.</p>
+			<a href="https://app.visory.cam/" class="btn-primary">Try Visory Web App</a>
+		</div>
+	</section>
+</Layout>
+
+<style>
+	/* Font Awesome */
+	@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
+	
+	/* Sections */
+	section {
+		padding: 5rem 0;
+	}
+	
+	.section-header {
+		text-align: center;
+		max-width: 800px;
+		margin: 0 auto 3rem;
+	}
+	
+	.section-header h2 {
+		font-size: 2.5rem;
+		margin-bottom: 1rem;
+		color: var(--text-color);
+	}
+	
+	.section-header p {
+		font-size: 1.25rem;
+		color: var(--text-light);
+	}
+	
+	/* Features */
+	.features {
+		background-color: var(--secondary-color);
+	}
+	
+	.features-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+		gap: 2rem;
+	}
+	
+	/* How It Works */
+	.steps {
+		display: flex;
+		justify-content: space-between;
+		gap: 2rem;
+		margin-top: 3rem;
+	}
+	
+	.step {
+		flex: 1;
+		text-align: center;
+		padding: 2rem;
+		background-color: var(--white);
+		border-radius: var(--radius);
+		box-shadow: var(--shadow);
+	}
+	
+	.step-number {
+		width: 50px;
+		height: 50px;
+		background-color: var(--primary-color);
+		color: var(--white);
+		border-radius: 50%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-size: 1.5rem;
+		font-weight: 700;
+		margin: 0 auto 1.5rem;
+	}
+	
+	.step h3 {
+		margin-bottom: 1rem;
+		font-size: 1.25rem;
+	}
+	
+	/* Features Detail */
+	.feature-row {
+		display: flex;
+		align-items: center;
+		gap: 4rem;
+		margin-bottom: 5rem;
+	}
+	
+	.feature-row:last-child {
+		margin-bottom: 0;
+	}
+	
+	.feature-row.reverse {
+		flex-direction: row-reverse;
+	}
+	
+	.feature-content {
+		flex: 1;
+	}
+	
+	.feature-content h2 {
+		font-size: 2rem;
+		margin-bottom: 1.5rem;
+	}
+	
+	.feature-content p {
+		margin-bottom: 1.5rem;
+		color: var(--text-light);
+	}
+	
+	.feature-list {
+		list-style: none;
+	}
+	
+	.feature-list li {
+		margin-bottom: 0.75rem;
+		padding-left: 1.5rem;
+		position: relative;
+	}
+	
+	.feature-list li:before {
+		content: "✓";
+		color: var(--primary-color);
+		position: absolute;
+		left: 0;
+		font-weight: 700;
+	}
+	
+	.feature-image {
+		flex: 1;
+		display: flex;
+		justify-content: center;
+	}
+	
+	.feature-image img {
+		max-width: 100%;
+		height: auto;
+		border-radius: var(--radius);
+		box-shadow: var(--shadow);
+	}
+	
+	.rounded-image {
+		border-radius: 20px;
+		box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+	}
+	
+	/* Coming Soon */
+	.coming-soon {
+		background-color: var(--secondary-color);
+	}
+	
+	/* CTA */
+	.cta {
+		background-color: var(--primary-color);
+		color: var(--white);
+		text-align: center;
+	}
+	
+	.cta h2 {
+		font-size: 2.5rem;
+		margin-bottom: 1rem;
+	}
+	
+	.cta p {
+		font-size: 1.25rem;
+		margin-bottom: 2rem;
+		max-width: 800px;
+		margin-left: auto;
+		margin-right: auto;
+		color: var(--white);
+	}
+	
+	.cta .btn-primary {
+		background-color: var(--white);
+		color: var(--primary-color);
+		font-size: 1.125rem;
+		padding: 0.75rem 2rem;
+	}
+	
+	.cta .btn-primary:hover {
+		background-color: var(--gray-light);
+	}
+	
+	/* Responsive */
+	@media (max-width: 992px) {
+		.feature-row, .feature-row.reverse {
+			flex-direction: column;
+			gap: 2rem;
+		}
+		
+		.feature-content, .feature-image {
+			text-align: center;
+		}
+		
+		.feature-list li {
+			text-align: left;
+		}
+	}
+	
+	@media (max-width: 768px) {
+		section {
+			padding: 3rem 0;
+		}
+		
+		.section-header h2 {
+			font-size: 2rem;
+		}
+		
+		.steps {
+			flex-direction: column;
+		}
+		
+		.feature-row {
+			margin-bottom: 3rem;
+		}
+	}
+</style>

@@ -1,0 +1,399 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="What's New - Visory">
+  <section class="whats-new-hero">
+    <div class="container">
+      <h1>What's New at Visory</h1>
+      <p>Stay up to date with our latest features, improvements, and updates</p>
+    </div>
+  </section>
+
+  <section class="updates">
+    <div class="container">
+      <div class="update-item">
+        <div class="update-date">June 2023</div>
+        <div class="update-content">
+          <h2>Multiple Camera Support</h2>
+          <p>We're excited to announce that Visory now supports multiple camera streams simultaneously. Connect and monitor up to 4 devices at once from a single viewing device.</p>
+          <div class="update-image">
+            <img src="/images/app-screenshot.png" alt="Multiple camera support" class="rounded-image" />
+          </div>
+          <div class="update-features">
+            <h3>Key improvements:</h3>
+            <ul>
+              <li>Monitor multiple rooms at once</li>
+              <li>Customizable grid view</li>
+              <li>Individual notification settings per camera</li>
+              <li>Improved performance for multi-camera setups</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="update-item">
+        <div class="update-date">April 2023</div>
+        <div class="update-content">
+          <h2>Enhanced Motion Detection</h2>
+          <p>Our latest update brings significant improvements to motion detection capabilities, reducing false alarms while ensuring you never miss important activity.</p>
+          <div class="update-features">
+            <h3>What's improved:</h3>
+            <ul>
+              <li>AI-powered motion analysis</li>
+              <li>Customizable motion sensitivity</li>
+              <li>Motion zones - define specific areas to monitor</li>
+              <li>Smart notifications with motion thumbnails</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="update-item">
+        <div class="update-date">February 2023</div>
+        <div class="update-content">
+          <h2>Web App Launch</h2>
+          <p>We've launched our new web application, allowing you to monitor your cameras from any browser without installing additional software.</p>
+          <div class="update-features">
+            <h3>Web app features:</h3>
+            <ul>
+              <li>Access your cameras from any device with a browser</li>
+              <li>Responsive design works on desktop and mobile</li>
+              <li>Secure cloud connection</li>
+              <li>No additional software required</li>
+            </ul>
+          </div>
+          <div class="cta-button">
+            <a href="https://app.visory.cam/" class="btn-primary">Try Web App</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="update-item">
+        <div class="update-date">December 2022</div>
+        <div class="update-content">
+          <h2>Night Vision Mode</h2>
+          <p>Visory now includes enhanced night vision capabilities, allowing for clear video even in low-light conditions.</p>
+          <div class="update-image">
+            <img src="/images/night-vision.jpg" alt="Night vision mode" class="rounded-image" />
+          </div>
+          <div class="update-features">
+            <h3>Night vision improvements:</h3>
+            <ul>
+              <li>Automatic low-light detection</li>
+              <li>Enhanced image processing for clearer night footage</li>
+              <li>Reduced noise in low-light conditions</li>
+              <li>Battery optimization for night mode</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="update-item">
+        <div class="update-date">October 2022</div>
+        <div class="update-content">
+          <h2>Sound Detection Algorithms</h2>
+          <p>Our new sound detection algorithms can identify specific sounds like baby crying, dog barking, and breaking glass.</p>
+          <div class="update-features">
+            <h3>New sound detection features:</h3>
+            <ul>
+              <li>Baby cry detection</li>
+              <li>Pet sound recognition</li>
+              <li>Glass break detection</li>
+              <li>Customizable sound sensitivity</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="coming-next">
+    <div class="container">
+      <h2>Coming Next</h2>
+      <p>Here's a sneak peek at what we're working on for future updates:</p>
+      
+      <div class="future-features">
+        <div class="feature-preview">
+          <div class="icon">
+            <i class="fas fa-cloud"></i>
+          </div>
+          <h3>Cloud Recording</h3>
+          <p>Secure cloud storage for your recordings with flexible retention options.</p>
+        </div>
+        
+        <div class="feature-preview">
+          <div class="icon">
+            <i class="fas fa-user-shield"></i>
+          </div>
+          <h3>Face Recognition</h3>
+          <p>Get alerts when specific people are detected by your cameras.</p>
+        </div>
+        
+        <div class="feature-preview">
+          <div class="icon">
+            <i class="fas fa-cogs"></i>
+          </div>
+          <h3>Smart Home Integration</h3>
+          <p>Connect with popular smart home platforms like Google Home and Amazon Alexa.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="feedback">
+    <div class="container">
+      <h2>We Value Your Feedback</h2>
+      <p>Have suggestions for new features or improvements? We'd love to hear from you!</p>
+      <a href="#" class="btn-secondary">Send Feedback</a>
+    </div>
+  </section>
+</Layout>
+
+<style>
+  /* Font Awesome */
+  @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
+  
+  /* Whats New Hero */
+  .whats-new-hero {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
+    color: var(--white);
+    padding: 5rem 0;
+    text-align: center;
+  }
+  
+  .whats-new-hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .whats-new-hero p {
+    font-size: 1.25rem;
+    max-width: 800px;
+    margin: 0 auto;
+    opacity: 0.9;
+  }
+  
+  /* Updates Section */
+  .updates {
+    padding: 5rem 0;
+  }
+  
+  .update-item {
+    display: flex;
+    margin-bottom: 4rem;
+    padding-bottom: 4rem;
+    border-bottom: 1px solid var(--gray);
+  }
+  
+  .update-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  
+  .update-date {
+    flex: 0 0 150px;
+    font-weight: 600;
+    color: var(--primary-color);
+    font-size: 1.125rem;
+  }
+  
+  .update-content {
+    flex: 1;
+  }
+  
+  .update-content h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: var(--text-color);
+  }
+  
+  .update-content p {
+    font-size: 1.125rem;
+    color: var(--text-light);
+    margin-bottom: 1.5rem;
+    max-width: 800px;
+  }
+  
+  .update-image {
+    margin: 2rem 0;
+  }
+  
+  .update-image img {
+    max-width: 100%;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+  }
+  
+  .rounded-image {
+    border-radius: 20px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+  }
+  
+  .update-features {
+    background-color: var(--secondary-color);
+    padding: 1.5rem;
+    border-radius: var(--radius);
+    margin: 1.5rem 0;
+  }
+  
+  .update-features h3 {
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+  }
+  
+  .update-features ul {
+    list-style: none;
+  }
+  
+  .update-features li {
+    margin-bottom: 0.75rem;
+    padding-left: 1.5rem;
+    position: relative;
+  }
+  
+  .update-features li:before {
+    content: "✓";
+    color: var(--primary-color);
+    position: absolute;
+    left: 0;
+    font-weight: 700;
+  }
+  
+  .cta-button {
+    margin-top: 2rem;
+  }
+  
+  /* Coming Next Section */
+  .coming-next {
+    background-color: var(--secondary-color);
+    padding: 5rem 0;
+    text-align: center;
+  }
+  
+  .coming-next h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .coming-next p {
+    font-size: 1.25rem;
+    color: var(--text-light);
+    max-width: 800px;
+    margin: 0 auto 3rem;
+  }
+  
+  .future-features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .feature-preview {
+    background-color: var(--white);
+    padding: 2rem;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    transition: transform 0.3s ease;
+  }
+  
+  .feature-preview:hover {
+    transform: translateY(-5px);
+  }
+  
+  .feature-preview .icon {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+  }
+  
+  .feature-preview h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .feature-preview p {
+    font-size: 1rem;
+    margin-bottom: 0;
+  }
+  
+  /* Feedback Section */
+  .feedback {
+    padding: 5rem 0;
+    text-align: center;
+    background-color: var(--white);
+  }
+  
+  .feedback h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .feedback p {
+    font-size: 1.25rem;
+    color: var(--text-light);
+    max-width: 800px;
+    margin: 0 auto 2rem;
+  }
+  
+  .btn-primary {
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 0.75rem 1.5rem;
+    border-radius: var(--radius);
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+  }
+  
+  .btn-primary:hover {
+    background-color: var(--primary-dark);
+  }
+  
+  .btn-secondary {
+    background-color: var(--white);
+    color: var(--primary-color);
+    padding: 0.75rem 1.5rem;
+    border-radius: var(--radius);
+    font-weight: 600;
+    border: 1px solid var(--primary-color);
+    transition: background-color 0.3s ease;
+    display: inline-block;
+  }
+  
+  .btn-secondary:hover {
+    background-color: var(--secondary-color);
+  }
+  
+  /* Responsive */
+  @media (max-width: 992px) {
+    .update-item {
+      flex-direction: column;
+    }
+    
+    .update-date {
+      margin-bottom: 1rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .whats-new-hero {
+      padding: 4rem 0;
+    }
+    
+    .whats-new-hero h1 {
+      font-size: 2.5rem;
+    }
+    
+    .updates, .coming-next, .feedback {
+      padding: 3rem 0;
+    }
+    
+    .update-content h2 {
+      font-size: 1.75rem;
+    }
+  }
+</style>

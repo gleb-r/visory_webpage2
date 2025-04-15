@@ -1,0 +1,10 @@
+This file is a placeholder to ensure the images directory is created.
+The actual image files should be uploaded to this directory.
+
+Recommended images:
+1. app-screenshot.png - A screenshot of the Visory app interface
+2. pet-monitoring.jpg - Image showing pet monitoring
+3. home-security.jpg - Image showing home security
+4. child-safety.jpg - Image showing child safety monitoring
+5. devices.jpg - Image showing multiple devices (phones/tablets)
+6. night-vision.jpg - Image showing night vision capability

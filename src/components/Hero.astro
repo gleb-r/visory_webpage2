@@ -1,0 +1,136 @@
+---
+---
+
+<section class="hero">
+	<div class="container">
+		<div class="hero-content">
+			<h1>Smart Home Security in Your Pocket</h1>
+			<p>Visory transforms your smartphone into a powerful CCTV camera for home protection or pet care. Monitor what matters most, from anywhere.</p>
+			<div class="hero-buttons">
+				<a href="https://app.visory.cam/" class="btn-primary">Try Web App</a>
+				<a href="#features" class="btn-secondary">Learn More</a>
+			</div>
+		</div>
+		<div class="hero-image">
+			<img src="/images/app-screenshot.png" alt="Visory App Screenshot" width="300" height="600" />
+		</div>
+	</div>
+</section>
+
+<style>
+	.hero {
+		padding: 6rem 0;
+		background: linear-gradient(135deg, var(--secondary-color) 0%, var(--white) 100%);
+	}
+	
+	.container {
+		display: flex;
+		align-items: center;
+		gap: 4rem;
+	}
+	
+	.hero-content {
+		flex: 1;
+	}
+	
+	h1 {
+		font-size: 3.5rem;
+		line-height: 1.2;
+		margin-bottom: 1.5rem;
+		color: var(--text-color);
+	}
+	
+	p {
+		font-size: 1.25rem;
+		color: var(--text-light);
+		margin-bottom: 2.5rem;
+		max-width: 600px;
+	}
+	
+	.hero-buttons {
+		display: flex;
+		gap: 1rem;
+	}
+	
+	.btn-primary {
+		background-color: var(--primary-color);
+		color: var(--white);
+		padding: 0.75rem 1.5rem;
+		border-radius: var(--radius);
+		font-weight: 600;
+		transition: background-color 0.3s ease;
+		display: inline-block;
+	}
+	
+	.btn-primary:hover {
+		background-color: var(--primary-dark);
+	}
+	
+	.btn-secondary {
+		background-color: var(--white);
+		color: var(--primary-color);
+		padding: 0.75rem 1.5rem;
+		border-radius: var(--radius);
+		font-weight: 600;
+		border: 1px solid var(--primary-color);
+		transition: background-color 0.3s ease;
+		display: inline-block;
+	}
+	
+	.btn-secondary:hover {
+		background-color: var(--secondary-color);
+	}
+	
+	.hero-image {
+		flex: 1;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	
+	.hero-image img {
+		max-width: 100%;
+		height: auto;
+		border-radius: 20px;
+		box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+	}
+	
+	@media (max-width: 992px) {
+		.container {
+			flex-direction: column;
+			text-align: center;
+		}
+		
+		.hero-content {
+			order: 2;
+		}
+		
+		.hero-image {
+			order: 1;
+			margin-bottom: 2rem;
+		}
+		
+		p {
+			margin-left: auto;
+			margin-right: auto;
+		}
+		
+		.hero-buttons {
+			justify-content: center;
+		}
+	}
+	
+	@media (max-width: 768px) {
+		.hero {
+			padding: 4rem 0;
+		}
+		
+		h1 {
+			font-size: 2.5rem;
+		}
+		
+		p {
+			font-size: 1.125rem;
+		}
+	}
+</style>
